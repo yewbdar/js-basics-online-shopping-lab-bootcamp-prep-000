@@ -58,12 +58,14 @@ function removeFromCart(item) {
   if(cart.length > 0){
     for(let i=0; i<cart.length; i++){
       if(cart[i].itemName === item){
-          cart.splice(i,1);
+         return cart.splice(i,1);
         found=false;
       } 
     }
-     
-    return cart
+    if(found){
+      return 'That item is not in your cart.'
+    }
+    
   }
 }
 
