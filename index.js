@@ -57,14 +57,14 @@ function removeFromCart(item) {
   if(cart.length > 0){
     for(let i=0; i<cart.length; i++){
       if(cart[i].itemName === item){
-        cart.splice(i,1);
+         return cart.splice(i,1);
         
-      } else{
-        return 'The item is not in your cart.'
-      }
+      } 
     }
-    console.log(cart)
-    return cart
+    // else{
+        return 'The item is not in your cart.'
+      // }
+    // return cart
   }
 }
 
