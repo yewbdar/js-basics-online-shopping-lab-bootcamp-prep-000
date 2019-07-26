@@ -129,12 +129,10 @@ describe("removeFromCart()", function() {
 
     const firstItemName = getCart()[0].itemName;
     const secondItemName = getCart()[1].itemName;
-    const secondItemName = getCart()[1].itemName;
-
+    
     expect(firstItemName).toEqual("vanilla");
-    expect(secondItemName).toEqual("watermelon");
-expect(secondItemName).toEqual("watermelon");
-
+    expect(secondItemName).toEqual("yams");
+   
     removeFromCart("yams");
 
     // expect(getCart().length).toEqual(1);
